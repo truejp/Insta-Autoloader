@@ -8,7 +8,7 @@
 ## Install
 
 1) Install neccessary libraries
-```pip install instagrapi```
+``pip install instagrapi``
 2) Prepare image folders
 3) Launch script and let it run
 
