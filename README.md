@@ -18,7 +18,7 @@
 - If you want to upload multiple images into a single post, paste multiple images in the same folder
 
 ## Todo:
-[] Random Delay between API calls
-[] Max. Number of uploads per Day
-[] Add paid proxy service to application
-[] Add external notification interface to check app status
+[ ] Random Delay between API calls
+[ ] Max. Number of uploads per Day
+[ ] Add paid proxy service to application
+[ ] Add external notification interface to check app status
