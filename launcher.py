@@ -45,8 +45,6 @@ if len(os.walk('img').next()[1]) == 0:
 
 logging.info("Folder /img is not empty. Starting upload process with " + str(subf) + " subfolders.")
 
-
-
 # global functions for worker
 
 def upload_photo():
