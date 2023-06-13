@@ -3,7 +3,7 @@
 
 ## Requirements
 - Instagrapi 2023
-- Python 3.8++
+- Python >=3.8
 
 ## Install
 
