@@ -1,5 +1,5 @@
 # Insta-Autoloader
- Autoloader for Insta API
+ Autoloader for Instagram API. Uploads images, videos and combined albums from a subfolder structure.
 
 ## Requirements
 - Instagrapi 2023
