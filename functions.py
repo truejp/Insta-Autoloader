@@ -1,5 +1,6 @@
 # Required functions for launcher.py
 import os
+import logging
 
 
 def upload_photo():
@@ -70,13 +71,33 @@ def upload_album():
         }
     )
 
-def fcount(path, map = {}):
+def fcount(root_dir):
+  map = {}
   count = 0
-  for f in os.listdir(path):
-    child = os.path.join(path, f)
+  for f in os.listdir(root_dir):
+    child = os.path.join(root_dir, f)
     if os.path.isdir(child):
-      child_count = fcount(child, map)
+      child_count = fcount(child)
       count += child_count + 1 # unless include self
-  map[path] = count
+  map[root_dir] = count
   return count
+
+def validate_folder(PATH):
+    # validate media folder, check if it's empty
+    if not os.path.exists(PATH):
+        print("Folder /" + PATH + " not found")
+        logging.error("Folder /" + PATH + " not found. Exiting...")
+        print("Exiting...")
+        exit(1)
+    logging.info("Folder /" + PATH + " found.")
+    print("Folder /" + PATH + " found.")
+    subf = fcount(PATH)
+
+    if subf == 0:
+        print("Folder /" + PATH + " is empty")
+        logging.error("Folder /" + PATH + " is empty. Exiting...")
+        print("Exiting...")
+        exit(1)
+    return subf
+
 

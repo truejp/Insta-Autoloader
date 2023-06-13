@@ -1,14 +1,18 @@
+# Main Script to launch the app
+# Includes: Scheduler, Primary Logics etc.
+
 # import libraries
 from instagrapi import Client
 import os
 import logging
 
 # import functions
-from functions import fcount
+from functions import validate_folder
 
-# global vars
+# config
 ACCOUNT_USERNAME = "jpl_tester"
 ACCOUNT_PASSWORD = "fJjC7cU65ftk372E"
+MEDIA_FOLDER = "media"
 
 # create log folder if not exists
 if not os.path.exists("log"):
@@ -21,10 +25,14 @@ logging.basicConfig(filename='log/app_primary.log',
     datefmt='%H:%M:%S',
     level=logging.INFO)
 
+logging.info("")
+logging.info("")
 logging.info("Launching app...")
+print("Launching app...")
 
 # login to instagram
 logging.info("Attempt login to instagram")
+print("Attempt login to instagram")
 cl = Client()
 # cl.login(ACCOUNT_USERNAME, ACCOUNT_PASSWORD)
 
@@ -34,22 +42,15 @@ cl = Client()
 # logging.info("Fetched Account Info for user: " + str(cl.user_info(user_id)))
 
 
-# check folder structure
-if not os.path.exists("img"):
-    print("Folder /img not found")
-    logging.error("Folder /img not found. Exiting...")
-    exit(1)
+# validate media folder, check if it's empty
+subf = validate_folder(MEDIA_FOLDER)
+logging.info("Folder /" + MEDIA_FOLDER + " is not empty. Starting upload process with " + str(subf) + " subfolder(s).")
+print("Folder /" + MEDIA_FOLDER + " is not empty. Starting upload process with " + str(subf) + " subfolder(s).")
 
-path = "img"
-map = {}
-subf = fcount(path, map)
-print(subf)
+# load folder structure
 
-if subf == 0:
-    print("Folder /img is empty")
-    logging.error("Folder /img is empty. Exiting...")
-    exit(1)
+# enter loop
 
-logging.info("Folder /img is not empty. Starting upload process with " + str(subf) + " subfolders.")
+# check local db if media has been uploaded
 
-
+# randomly choose a folder that has not been uploaded
