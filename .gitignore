@@ -1,0 +1,3 @@
+__pycache__ ` folder.  This is a cache of the compiled bytecode for the Python files in the directory.  It is safe to delete this folder, and it will be recreated the next time you run the program.  This is a common way to fix problems with Python programs.
+*.pyc ` files.  These are compiled bytecode files.  They are safe to delete, and they will be recreated the next time you run the program.
+*.log ` - These are log files.  They are safe to delete, but they may contain useful information for debugging problems with the program.
