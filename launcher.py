@@ -19,7 +19,7 @@ logging.basicConfig(filename='log/app_primary.log',
     filemode='a',
     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
     datefmt='%H:%M:%S',
-    level=logging.DEBUG)
+    level=logging.INFO)
 
 logging.info("Launching app...")
 
