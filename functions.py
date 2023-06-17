@@ -2,6 +2,20 @@
 import os
 import logging
 
+def list_files(dir):
+    r = []
+    for root, dirs, files in os.walk(dir):
+        for name in files:
+            r.append(os.path.join(root, name))
+    return r
+
+def list_folders(dir):
+    r = []
+    for root, dirs, files in os.walk(dir):
+        r.append(dirs)
+    # remove all empty entries from list
+    r = [x for x in r if x != []]
+    return r
 
 def upload_photo():
     # upload single photo
