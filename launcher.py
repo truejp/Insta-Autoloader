@@ -60,8 +60,7 @@ logging.info("Folder /" + MEDIA_FOLDER + " is not empty. Starting upload process
 print("Folder /" + MEDIA_FOLDER + " is not empty. Starting upload process with " + str(subf) + " subfolder(s).")
 
 # load folder structure
-root_list = list_folders(MEDIA_FOLDER)
-
+root_list = list_folders(MEDIA_FOLDER)[0]
 # load db
 db = TinyDB(DB_FILE)
 cred_db = db.table(CRED_DB_NAME)
@@ -70,13 +69,17 @@ upload_db = db.table(UPLOAD_DB_NAME)
 # enter loop
 while True:
     # check if there are more folders than already uploaded
-    if (len(root_list) <= len(upload_db.all())):
+    folders = []
+    for items in upload_db.all():
+        folders.append(items['folder'])
+    num_values = len(set(folders))
+    if (len(root_list) <= num_values):
         logging.info("All folders have been uploaded. Exiting app.")
         print("All folders have been uploaded. Exiting app.")
         break
     while True:
         # randomly choose a folder that has not been uploaded
-        curr_root = random.choice(root_list)[0]
+        curr_root = random.choice(root_list)
         # check if folder was previously uploaded
         if (len(upload_db.search(Query().folder == curr_root)) > 0):
             logging.info("Folder " + curr_root + " has been uploaded. Skip this folder.")
@@ -104,12 +107,18 @@ while True:
     # if there are valid files, start uploading process
     if (len(valid_files) > 0):
         i = 0
-        for file in valid_files:
-            i+=1
-            print("Uploading " + str(len(valid_files)) + " files in folder: " + curr_root + " (" + str(i) + "/" + str(len(valid_files)) + ")")
-            logging.info("Uploading " + str(len(valid_files)) + " files in folder: " + curr_root)
-
-            # upload file(s) to instagram
+        # check if upload media is album or single media
+        if (len(valid_files) > 1):
+            logging.info("Uploading album")
+            print("Uploading album")
+            for file in valid_files:
+                i+=1
+                print("Uploading " + str(len(valid_files)) + " files in folder: " + curr_root + " (" + str(i) + "/" + str(len(valid_files)) + ")")
+                logging.info("Uploading " + str(len(valid_files)) + " files in folder: " + curr_root)
+                # cl.album_upload(valid_files, "Album from Python")
+        else:
+            file = valid_files[0]
+            # upload single file to instagram
             if (os.path.splitext(file)[1] == ".mp4"):
                 # upload video
                 logging.info("Uploading video: " + file)
@@ -127,7 +136,8 @@ while True:
 
             # put uploaded file into db
             upload_db.insert({'folder': curr_root, 'file': file, 'uploaded_at': str(datetime.datetime.now()), 'account': ACCOUNT_USERNAME})
-        
+    else:
+        upload_db.insert({'folder': curr_root, 'file': 'No files found.', 'uploaded_at': 'n/A', 'account': 'n/A'})   
     # go to sleep for 20 to 45 seconds before next loop
     sleep_time = random.randint(20, 45)
     logging.info("Sleeping for " + str(sleep_time) + " seconds before next loop.")

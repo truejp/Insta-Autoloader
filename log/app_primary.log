@@ -13229,3 +13229,116 @@
 01:09:01,161 root INFO Folder /media found.
 01:09:01,161 root INFO Folder /media is not empty. Starting upload process with 1 subfolder(s).
 01:09:01,162 root INFO All folders have been uploaded. Exiting app.
+01:36:01,63 root INFO 
+01:36:01,63 root INFO 
+01:36:01,63 root INFO Launching app...
+01:36:01,63 root INFO Attempt login to instagram
+01:36:01,64 root INFO Folder /media found.
+01:36:01,65 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:36:01,66 root INFO All folders have been uploaded. Exiting app.
+01:44:53,579 root INFO 
+01:44:53,580 root INFO 
+01:44:53,580 root INFO Launching app...
+01:44:53,580 root INFO Attempt login to instagram
+01:44:53,581 root INFO Folder /media found.
+01:44:53,581 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:44:53,582 root INFO All folders have been uploaded. Exiting app.
+01:45:10,773 root INFO 
+01:45:10,773 root INFO 
+01:45:10,773 root INFO Launching app...
+01:45:10,774 root INFO Attempt login to instagram
+01:45:10,775 root INFO Folder /media found.
+01:45:10,775 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:45:10,776 root INFO All folders have been uploaded. Exiting app.
+01:45:24,258 root INFO 
+01:45:24,258 root INFO 
+01:45:24,258 root INFO Launching app...
+01:45:24,259 root INFO Attempt login to instagram
+01:45:24,259 root INFO Folder /media found.
+01:45:24,260 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:45:24,261 root INFO All folders have been uploaded. Exiting app.
+01:45:55,463 root INFO 
+01:45:55,464 root INFO 
+01:45:55,464 root INFO Launching app...
+01:45:55,464 root INFO Attempt login to instagram
+01:45:55,465 root INFO Folder /media found.
+01:45:55,466 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:45:55,467 root INFO All folders have been uploaded. Exiting app.
+01:46:17,212 root INFO 
+01:46:17,213 root INFO 
+01:46:17,213 root INFO Launching app...
+01:46:17,213 root INFO Attempt login to instagram
+01:46:17,214 root INFO Folder /media found.
+01:46:17,214 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:46:17,215 root INFO All folders have been uploaded. Exiting app.
+01:46:33,104 root INFO 
+01:46:33,105 root INFO 
+01:46:33,105 root INFO Launching app...
+01:46:33,105 root INFO Attempt login to instagram
+01:46:33,106 root INFO Folder /media found.
+01:46:33,106 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:46:33,107 root INFO All folders have been uploaded. Exiting app.
+01:46:52,146 root INFO 
+01:46:52,146 root INFO 
+01:46:52,146 root INFO Launching app...
+01:46:52,147 root INFO Attempt login to instagram
+01:46:52,148 root INFO Folder /media found.
+01:46:52,148 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:46:52,149 root INFO All folders have been uploaded. Exiting app.
+01:47:09,68 root INFO 
+01:47:09,68 root INFO 
+01:47:09,68 root INFO Launching app...
+01:47:09,69 root INFO Attempt login to instagram
+01:47:09,69 root INFO Folder /media found.
+01:47:09,70 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:47:09,71 root INFO All folders have been uploaded. Exiting app.
+01:47:41,142 root INFO 
+01:47:41,142 root INFO 
+01:47:41,142 root INFO Launching app...
+01:47:41,142 root INFO Attempt login to instagram
+01:47:41,143 root INFO Folder /media found.
+01:47:41,144 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:47:41,145 root INFO All folders have been uploaded. Exiting app.
+01:47:53,791 root INFO 
+01:47:53,791 root INFO 
+01:47:53,791 root INFO Launching app...
+01:47:53,791 root INFO Attempt login to instagram
+01:47:53,792 root INFO Folder /media found.
+01:47:53,792 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:47:53,793 root INFO Randomly choose folder: i
+01:47:53,794 root INFO Found 0 files in folder: i
+01:47:53,794 root INFO Sleeping for 40 seconds before next loop.
+01:48:22,214 root INFO 
+01:48:22,214 root INFO 
+01:48:22,214 root INFO Launching app...
+01:48:22,215 root INFO Attempt login to instagram
+01:48:22,215 root INFO Folder /media found.
+01:48:22,216 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:48:22,217 root INFO Randomly choose folder: img_3_folder
+01:48:22,217 root INFO Found 0 files in folder: img_3_folder
+01:48:22,217 root INFO Sleeping for 25 seconds before next loop.
+01:49:51,828 root INFO 
+01:49:51,828 root INFO 
+01:49:51,828 root INFO Launching app...
+01:49:51,828 root INFO Attempt login to instagram
+01:49:51,829 root INFO Folder /media found.
+01:49:51,830 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:49:51,830 root INFO Randomly choose folder: img_2_folder
+01:49:51,831 root INFO Found 1 files in folder: img_2_folder
+01:49:51,831 root INFO Found file: media/img_2_folder\5_1.jpg
+01:50:36,675 root INFO 
+01:50:36,675 root INFO 
+01:50:36,675 root INFO Launching app...
+01:50:36,676 root INFO Attempt login to instagram
+01:50:36,677 root INFO Folder /media found.
+01:50:36,678 root INFO Folder /media is not empty. Starting upload process with 3 subfolder(s).
+01:50:36,679 root INFO Folder img_1_folder has been uploaded. Skip this folder.
+01:50:36,679 root INFO Randomly choose folder: img_3_folder
+01:50:36,679 root INFO Found 0 files in folder: img_3_folder
+01:50:36,681 root INFO Sleeping for 22 seconds before next loop.
+01:50:58,689 root INFO Randomly choose folder: img_2_folder
+01:50:58,690 root INFO Found 1 files in folder: img_2_folder
+01:50:58,690 root INFO Found file: media/img_2_folder\5_1.jpg
+01:50:58,690 root INFO Uploading photo: media/img_2_folder\5_1.jpg
+01:50:58,692 root INFO Sleeping for 33 seconds before next loop.
+01:51:31,697 root INFO All folders have been uploaded. Exiting app.
